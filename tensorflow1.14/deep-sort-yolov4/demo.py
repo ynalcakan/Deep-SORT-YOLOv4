@@ -37,10 +37,10 @@ def main(yolo):
     tracker = Tracker(metric)
 
     tracking = True
-    writeVideo_flag = True
+    writeVideo_flag = False
     asyncVideo_flag = False
 
-    file_path = 'video.webm'
+    file_path = "/home/yagiz/Desktop/Berkeley_Drive_Dataset/bdd100k/videos/highway/cutin_videos/new/cutin_261.mov"
     if asyncVideo_flag :
         video_capture = VideoCaptureAsync(file_path)
     else:
